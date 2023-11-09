@@ -9,6 +9,6 @@ if (userNumber > cpuNumber) {
     console.log("Ha vinto l'utente!");
 } else if (cpuNumber > userNumber) {
     console.log("Ha vinto la CPU!");
-} else if (userNumber === cpuNumber) {
+} else {
     console.log("Partita finita in parità!");
 }

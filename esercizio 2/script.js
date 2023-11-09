@@ -23,11 +23,17 @@ if (userNumber > cpuNumber) {
 // e i punteggi vengono accumulati in due variabili che verranno confrontate alla fine delle partite.
 // Vengono implementati dei controlli sull'input
 
-const playsCounter = prompt("Inserisci il numero delle giocate che vuoi fare")
+const playsCounter = Number(prompt("Inserisci il numero delle giocate che vuoi fare"))
 let userTotal = 0;
 let cpuTotal = 0;
 
-if (playsCounter > 0) {
+if (isNaN(playsCounter)) {
+    console.log("Ti supplico scrivi il numero in cifre e usa numeri interi...");
+} else if (!Number.isInteger(playsCounter)) {
+    console.log("Scrivi un numero intero per cortesia!");
+} else if (playsCounter <= 0) {
+    console.log("Non puoi fare giocate negative o pari a zero, scemo!");
+} else {
 
     for (let cycleNumber = 0; cycleNumber < playsCounter; cycleNumber++) {
         const userNumber = Math.floor((Math.random() * 6) + 1);
@@ -46,10 +52,6 @@ if (playsCounter > 0) {
     } else {
         console.log("Partita finita in parità!");
     }
-} else if (playsCounter < 0) {
-    console.log("Non puoi fare giocate negative scemo!")
-} else if (typeof (playsCounter) === "string") {
-    console.log("Ti supplico scrivi il numero in cifre...")
 }
 
 */

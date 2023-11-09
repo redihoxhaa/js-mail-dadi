@@ -1,3 +1,5 @@
+'use strict'
+
 const userNumber = Math.floor((Math.random() * 6) + 1);
 const cpuNumber = Math.floor((Math.random() * 6) + 1);
 console.log("Il numero dell'utente è " + userNumber);

@@ -1,5 +1,5 @@
-const userNumber = Math.floor(Math.random() * 50);
-const cpuNumber = Math.floor(Math.random() * 50);
+const userNumber = Math.floor((Math.random() * 6) + 1);
+const cpuNumber = Math.floor((Math.random() * 6) + 1);
 console.log("Il numero dell'utente è " + userNumber);
 console.log("Il numero della CPU è " + cpuNumber);
 

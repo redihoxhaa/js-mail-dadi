@@ -11,7 +11,7 @@ for (let counter = 0; counter < emailsList.length; counter++) {
     }
 }
 
-if (statusCheck === true) {
+if (statusCheck) {
     console.log("Sei autorizzato ad entrare nel nostro database di armi nucleari!");
 } else {
     console.log("Mi spiace, devi riprogrammare il tuo attacco terroristico alla prossima volta :(");

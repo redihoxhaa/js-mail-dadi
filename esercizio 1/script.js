@@ -8,7 +8,6 @@ for (let counter = 0; counter < emailsList.length; counter++) {
         console.log("Sei autorizzato ad entrare nel nostro database di armi nucleari!");
         break;
     } else {
-        console.log("Mi spiace, devi riprogrammare il tuo attacco terroristico alla prossima volta :(");
-        break;
+        console.log("Mi spiace, devi riprogrammare il tuo attacco terroristico alla prossima volta :(")
     }
 }
